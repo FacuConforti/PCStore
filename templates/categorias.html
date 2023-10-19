@@ -1,0 +1,80 @@
+{% include 'header.html' %}
+
+    <section id="container-catpro">
+
+        <section class="container-categorias">
+
+            <div class="categorias">
+
+                <div class="titulos">
+
+                    <h3>Categorias</h3>
+              
+                </div>
+
+                <div class="lista-categorias">
+
+                    <ul>
+                        <li>Procesadores</li>
+                        <ul>
+                            <li><a href="">Intel</a></li>
+                            <li><a href="">AMD</a></li>
+                        </ul>
+
+                        <li>Placas de Video</li>
+                        <ul>
+                            <li><a href="">NVIDIA</a></li>
+                            <li><a href="">AMD</a></li>
+                        </ul>
+
+                        <li>Placas Madre</li>
+                        <ul>
+                            <li><a href="">Intel</a></li>
+                            <li><a href="">AMD</a></li>
+                        </ul>
+
+                        <li><a href="">Memorias RAM</a></li>
+
+                        <li>Discos</li>
+                        <ul>
+                            <li><a href="">SSD</a></li>
+                            <li><a href="">Solidos</a></li>
+                        </ul>
+
+                    </ul>
+
+                </div>
+
+            </div>
+            
+            <div class="productos-categorias">
+
+                <div class="titulos">
+
+                    <h3>Productos</h3>
+              
+                </div>
+
+                <div class="lista-productos" v-for="">
+
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="..." alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Producto</h5>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                            {% for producto in productos %}
+                                <li>{{ producto.nombre }} - Precio: ${{ producto.precio }}</li>
+                            {% endfor %}
+                
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </section>
+
+{% include 'footer.html' %}

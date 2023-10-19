@@ -1,0 +1,31 @@
+/* CATEGORIAS */
+#container-catpro{
+    margin: 5px;
+    padding: 20px;
+}
+
+.container-categorias{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+
+.categorias { 
+    grid-area: 1 / 1 / 4 / 2; 
+    background-color: rgb(207, 207, 207);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.productos-categorias { 
+    grid-area: 1 / 2 / 4 / 6; 
+    background-color: rgb(207, 207, 207);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+
+/* CATEGORIAS DESPLEGABLE */
+
